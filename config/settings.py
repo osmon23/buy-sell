@@ -33,6 +33,7 @@ ALLOWED_HOSTS = con('ALLOWED_HOSTS').split(',')
 MY_APPS = [
     'apps.accounts',
     'apps.products',
+    'apps.geo',
 ]
 
 THIRD_PARTY_APPS = [
@@ -43,6 +44,7 @@ THIRD_PARTY_APPS = [
     'phonenumber_field',
     'django_rest_passwordreset',
     'mptt',
+    'leaflet',
 ]
 
 INSTALLED_APPS = [
@@ -52,6 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
 ] + MY_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
@@ -91,8 +94,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'geo',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 

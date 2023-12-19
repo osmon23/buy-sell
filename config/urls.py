@@ -39,6 +39,7 @@ api_urlpatterns = [
     path('auth/', include(api_auth_urlpatterns)),
     path('accounts/', include('apps.accounts.urls')),
     path('products/', include('apps.products.urls')),
+    path('geo/', include('apps.geo.urls')),
     path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),
 ]
 
