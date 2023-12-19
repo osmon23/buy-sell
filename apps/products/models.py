@@ -24,3 +24,10 @@ class Category(MPTTModel):
         verbose_name_plural = 'Категории'
         order_insertion_by = ['name']
         level_attr = 'mptt_level'
+
+
+class Product(models.Model):
+    name = models.CharField(
+        'Name',
+        max_length=255,
+    )
