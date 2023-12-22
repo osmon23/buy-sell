@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-22 16:50+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: apps/accounts/admin.py:13
+msgid "Personal info"
+msgstr "Алтай коток"
+
+#: apps/accounts/admin.py:15
+msgid "Permissions"
+msgstr "ФЫВАФЫВА"
+
+#: apps/accounts/admin.py:26
+msgid "Important dates"
+msgstr "ФЫВАФЫВА"
+
+#: apps/accounts/models.py:18
+msgid "active"
+msgstr "Активдуу"
+
+#: apps/accounts/models.py:21
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+
+#: apps/geo/apps.py:8 apps/geo/models.py:21
+msgid "Geo"
+msgstr "Геосу"
+
+#: apps/geo/models.py:7
+msgid "Point"
+msgstr "Точкасы"
+
+#: apps/geo/models.py:10
+msgid "Polygon"
+msgstr "Полигону"
+
+#: apps/geo/models.py:13
+msgid "Name"
+msgstr "Аталышы"
+
+#: apps/geo/models.py:22
+msgid "Geos"
+msgstr "Геолор"
+
+#: config/settings.py:139
+msgid "English"
+msgstr "English"
+
+#: config/settings.py:140
+msgid "Russian"
+msgstr "Русккий"
+
+#: config/settings.py:141
+msgid "Kyrgyz"
+msgstr "Кыргызча"

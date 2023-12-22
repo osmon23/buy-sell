@@ -6,4 +6,9 @@ from .models import Geo
 class GeoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Geo
-        fields = '__all__'
+        fields = (
+            'id',
+            'name',
+            'point',
+            'polygon',
+        )

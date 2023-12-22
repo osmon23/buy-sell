@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns
 
 from rest_framework import permissions
 
@@ -43,7 +44,8 @@ api_urlpatterns = [
     path('password_reset/', include('django_rest_passwordreset.urls', namespace='password_reset')),
 ]
 
-urlpatterns = [
+urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
     path('api/v1/', include(api_urlpatterns)),
-]
+    path('i18n/', include('django.conf.urls.i18n')),
+)
